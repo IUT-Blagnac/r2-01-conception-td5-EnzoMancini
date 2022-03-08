@@ -1,0 +1,47 @@
+@startuml issue2
+
+hide circle
+hide empty members
+hide empty methods
+
+skinparam classAttributeIconSize 0
+
+skinparam roundcorner 5
+
+skinparam class {
+    BackgroundColor AliceBlue
+    BorderColor DarkSlateGray
+    ArrowColor Black
+    FontColor Black
+    FontSize 12
+    FontName Helvetica
+}
+
+skinparam arrow {
+    MessageAlign center
+}
+
+entreprise "1" -- "0.." artisans : composer
+artisans "0.." - "1" specialite : posseder
+artisans "0.." -- "0.." chantier : affecter
+
+class entreprise{
+
+}
+
+class specialite{
+
+}
+
+class chantier{
+    +dateDebut
+    +dateFin
+    +adresse
+}
+
+class artisans{
+    +salaireHoraire
+    +coordonnées
+}
+
+@enduml
