@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="325px" preserveAspectRatio="none" style="width:280px;height:325px;background:#FFFFFF;" version="1.1" viewBox="0 0 280 325" width="280px" zoomAndPan="magnify"><defs/><g><!--MD5=[d56faaedbbc2bca38cc7059cfc601488]
+class entreprise--><g id="elem_entreprise"><rect codeLine="26" fill="#F0F8FF" height="23.9688" id="entreprise" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="69" x="26" y="7"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="63" x="29" y="23.1387">entreprise</text></g><!--MD5=[7b3117fa879fac31cc3fe5e93ff4265e]
+class artisans--><g id="elem_artisans"><rect codeLine="40" fill="#F0F8FF" height="59.9063" id="artisans" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="107" x="7" y="108"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="47" x="37" y="124.1387">artisans</text><line style="stroke:#2F4F4F;stroke-width:0.5;" x1="8" x2="113" y1="131.9688" y2="131.9688"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="95" x="13" y="147.1074">+salaireHoraire</text><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="91" x="13" y="161.0762">+coordonnées</text></g><!--MD5=[c4af55efdd078a05f4b55bc3a0b8370d]
+class specialite--><g id="elem_specialite"><rect codeLine="30" fill="#F0F8FF" height="23.9688" id="specialite" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="64" x="209.5" y="126"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="58" x="212.5" y="142.1387">specialite</text></g><!--MD5=[73d3813f2438fd2b50fd008d88e7e014]
+class chantier--><g id="elem_chantier"><rect codeLine="34" fill="#F0F8FF" height="73.875" id="chantier" rx="2.5" ry="2.5" style="stroke:#2F4F4F;stroke-width:0.5;" width="85" x="18" y="245"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="48" x="36.5" y="261.1387">chantier</text><line style="stroke:#2F4F4F;stroke-width:0.5;" x1="19" x2="102" y1="268.9688" y2="268.9688"/><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="73" x="24" y="284.1074">+dateDebut</text><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="54" x="24" y="298.0762">+dateFin</text><text fill="#000000" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="60" x="24" y="312.0449">+adresse</text></g><!--MD5=[3c4ef2b3af37fd74f00bb6d7e55cee7b]
+link entreprise to artisans--><g id="link_entreprise_artisans"><path codeLine="22" d="M60.5,31.218 C60.5,48.72 60.5,83.086 60.5,107.907 " fill="none" id="entreprise-artisans" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="61.5" y="74.0669">composer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="50.925" y="51.0812">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="42.75" y="96.7752">0..</text></g><!--MD5=[c1411c10526748c967d6b0b80928d717]
+link artisans to specialite--><g id="link_artisans_specialite"><path codeLine="23" d="M114.316,138 C145.265,138 183.105,138 209.427,138 " fill="none" id="artisans-specialite" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="59" x="132.25" y="131.0669">posseder</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="121.8498" y="134.1666">0..</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="193.536" y="133.4442">1</text></g><!--MD5=[3d44ad40c589ccf116c9cb8186fbd6cf]
+link artisans to chantier--><g id="link_artisans_chantier"><path codeLine="24" d="M60.5,168.078 C60.5,190.311 60.5,221.0876 60.5,244.8963 " fill="none" id="artisans-chantier" style="stroke:#000000;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="51" x="61.5" y="211.0669">affecter</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="42.85" y="187.9187">0..</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="16" x="43.075" y="234.0411">0..</text></g><!--MD5=[68d36da64858367a2123ea84e2ffcefe]
+@startuml
+hide circle
+hide empty members
+hide empty methods
+
+skinparam classAttributeIconSize 0
+
+skinparam roundcorner 5
+
+skinparam class {
+    BackgroundColor AliceBlue
+    BorderColor DarkSlateGray
+    ArrowColor Black
+    FontColor Black
+    FontSize 12
+    FontName Helvetica
+}
+
+skinparam arrow {
+    MessageAlign center
+}
+
+entreprise "1" - - "0.." artisans : composer
+artisans "0.." - "1" specialite : posseder
+artisans "0.." - - "0.." chantier : affecter
+
+class entreprise{
+
+}
+
+class specialite{
+
+}
+
+class chantier{
+    +dateDebut
+    +dateFin
+    +adresse
+}
+
+class artisans{
+    +salaireHoraire
+    +coordonnées
+}
+@enduml
+
+PlantUML version 1.2022.2(Sat Mar 05 16:30:19 UTC 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
